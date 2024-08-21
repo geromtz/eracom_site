@@ -1,0 +1,129 @@
+@import url('./menu.css');
+
+.manten_contacto_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px 0px;
+}
+
+.mc_item_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    background-color: #d9d9d92d;
+    border-radius: 10px;
+    color: var(--text-color-dm);
+    font-family: "Lato", sans-serif;
+    padding: 5px;
+}
+
+.mc_title {
+    font-size: 2rem;
+    font-weight: bold;        
+}
+
+.mc_text {
+    font-size: 1.8rem;
+}
+
+.section_title {
+    display: block;
+    font-size: 2.4rem;
+    color: #fff;    
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    margin: 15px 0px;
+}
+
+.contact_form_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#contactForm {
+    width: 95%;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #d9d9d92d;
+}
+
+#contactForm input {
+    width: 90%;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #fff;
+    font-family: "Lato", sans-serif;
+    color: #fff;
+    padding: 15px 0px;
+    font-size: 1.8rem;
+}
+
+#contactForm textarea {
+    width: 90%;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #fff;
+    font-family: "Lato", sans-serif;
+    color: #fff;
+    padding: 15px 0px;
+    font-size: 1.8rem;
+    resize: none;
+    height: 150px;
+}
+
+#contactForm input::placeholder {
+    color: #fff;
+    font-family: "Lato", sans-serif;
+}
+
+#contactForm textarea::placeholder {
+    color: #fff;
+    font-family: "Lato", sans-serif;
+}
+
+#idSendContactForm {
+    display: block;
+    margin: 15px auto;
+    width: 180px;
+    height: 30px;
+    border: none;
+    font-size: 1.6rem;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+}
+
+#mapFrame {
+    width: 100%;
+    height: 300px;
+}
+
+@media (min-width: 481px) {
+    .mc_item_container {
+        max-width: 400px;
+    }
+
+    #contactForm {        
+        max-width: 400px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .manten_contacto_container {
+        width: 50%;
+    }
+
+    .contact_form_container {
+        width: 50%;
+    }
+}

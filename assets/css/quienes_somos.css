@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+.main_home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quienes_somos_container {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 75px;
+    padding: 150px 10px;
+}
+
+.quienes_somos_img{
+    width: 50%;
+}
+
+.quienes_somos_img img {
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Ajusta el tamaño y color de la sombra */
+}
+
+.quienes_somos_container span {
+    display: block;
+    font-family: "League Spartan", sans-serif;
+}
+
+.quienes_somos {
+    width: 50%;
+}
+
+.title_qs {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.desc_qs {
+    font-size: 1.6rem;
+}
+
+/* ***** */
+
+.empresa_compromisos_container {
+    background-color: #011114;
+    border-top: 1px solid #fff;
+}
+
+.empresa_compromisos_container h3 {
+    color: #fff;
+    font-size: 2.6rem;
+    text-align: center;
+    margin-top: 20px;
+    font-family: "League Spartan", sans-serif;
+}
+
+.compromisos_list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 10px;
+    font-family: "League Spartan", sans-serif;
+}
+
+.compromisos_list_item {
+    width: 50%;
+}
+
+.compromisos_list_item img {
+    width: 90%;
+    max-width: 100px;
+}
+
+
+.compromisos_list_item .compromiso_item_title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+    
+}
+
+.compromisos_list_item .compromiso_item_description {
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+/* Aliados comerciales */
+
+.aliados_comerciales_container {
+    border-top: 1px solid #fff;
+    width: 100%;
+    margin-top: 30px;
+    font-family: "League Spartan", sans-serif;
+}
+
+.aliados_comerciales_title {
+    font-size: 2.6rem;
+    color: #fff;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.aliados_comerciales_list {
+    list-style: none;
+}
+
+.aliado_item {
+    display: inline-block;
+}
+
+.aliado_item_img {
+    width: 50px;
+    
+}
+
+/* sphere */
+
+.brand-sphere {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#tagcloud {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    perspective: 1000px;
+    cursor: grab; /* Cambia el cursor cuando se pasa sobre la esfera */
+}
+
+.tag {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: center;
+    color: #3498db;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.tag:hover {
+    color: #e74c3c;
+}
+
+#tagcloud:active {
+    cursor: grabbing; /* Cambia el cursor cuando se arrastra la esfera */
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+
+@media (min-width: 481px) {
+    .quienes_somos_container {
+        max-width: 600px;
+        gap: 0px 5px;
+    }
+
+    .title_qs {
+        font-size: 3.5rem;
+        font-weight: bold;
+    }
+    
+    .desc_qs {
+        font-size: 1.6rem;
+    }
+
+    /* *** */
+
+    .empresa_compromisos_container {
+        max-width: 600px;
+    }
+
+    .empresa_compromisos_container h3 {
+        font-size: 3rem;
+    }
+
+    .compromisos_list_item .compromiso_item_title {
+        font-size: 2.4rem;
+        
+    }
+    
+    .compromisos_list_item .compromiso_item_description {
+        max-width: 90%;
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .quienes_somos_container {
+        max-width: 1540px;
+        padding: 150px 10px;
+        gap: 0px 20px;
+    }
+
+    .title_qs {
+        font-size: 8rem;
+        font-weight: bold;
+    }
+    
+    .desc_qs {
+        font-size: 4rem;
+    }
+
+    .empresa_compromisos_container {
+        max-width: 1540px;
+    }
+
+    .empresa_compromisos_container h3 {
+        font-size: 4rem;
+    }
+
+    .compromisos_list_item .compromiso_item_title {
+        font-size: 3rem;
+        
+    }
+    
+    .compromisos_list_item .compromiso_item_description {
+        font-size: 2.4rem;
+    }
+}
