@@ -1,5 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text-color-lm: #000;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #fff;
+}
+
 header {
   width: 100%;
   position: fixed;
@@ -16,10 +34,6 @@ footer svg {
 footer svg:hover {
   transform: scale(1.2);
   transition: all 0.3s ease-in-out;
-}
-
-html {
-  font-size: 62.5%;
 }
 
 main {
@@ -95,7 +109,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #011114;
+  background-color: rgba(7, 7, 7, 0.555);
 }
 
 .phone_icon {
